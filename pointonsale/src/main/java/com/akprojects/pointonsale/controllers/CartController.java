@@ -20,10 +20,15 @@ public class CartController {
 		return "ZenShop/landing";
 	}
 	
-//	@GetMapping("/buyproducts")
-//	public String buyProducts() {
-//		return "ZenShop/buy-products";
-//	}
+	@GetMapping("/buyproducts")
+	public String buyProducts() {
+		return "ZenShop/buy-products";
+	}
+	
+	@GetMapping("/updating")
+	public String updatingPage() {
+		return "/zenshop/updating";
+	}
 	
 	@PostMapping("/addtocart")
 	public ModelAndView addtoCart(
